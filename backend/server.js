@@ -1,93 +1,132 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(cors());
 
-// Updated Mongoose connection without deprecated options
-mongoose.connect('mongodb+srv://eklavyabro:rtdiasndrf@ndrf.avscv.mongodb.net/agency?retryWrites=true&w=majority&appName=NDRF')
-    .then(() => console.log('MongoDB connected successfully'))
-    .catch((err) => console.error('MongoDB connection error:', err));
+const mongoURI = "mongodb+srv://eklavyabro:rtdiasndrf@ndrf.avscv.mongodb.net/agency?retryWrites=true&w=majority"; // Ensure 'agency' is lowercase
 
-const employeeSchema = new mongoose.Schema({
-    agencyName: String,
-    agencyId: Number,
-    pincode: Number,
-    email: String,
-    employeeName: String,
-    employeeId: Number,
-    position: String,
-    phone: String,
-    regPassword: String,
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.log('MongoDB connection error:', err));
+
+// Define schemas for Employee and Grievance
+const EmployeeSchema = new mongoose.Schema({
+  agencyName: { type: String, required: true },
+  agencyId: { type: String, required: true },
+  pincode: { type: String, required: true },
+  email: { type: String, required: true },
+  employeeName: { type: String, required: true },
+  employeeId: { type: String, required: true },
+  position: { type: String, required: true },
+  phone: { type: String, required: true },
+  password: { type: String, required: true }
 });
 
-const grievanceSchema = new mongoose.Schema({
-    name: String,
-    contactNumber: String,
-    address: String,
-    pincode: Number,
-    disasterType: String,
-    assistanceRequired: String,
-    description: String,
-    peopleCount: Number,
-    urgencyLevel: String,
+const GrievanceSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  contactNumber: { type: String, required: true },
+  address: { type: String, required: true },
+  pincode: { type: String, required: true },
+  disasterType: { type: String, required: true },
+  assistanceRequired: { type: [String], required: true },
+  description: { type: String, required: true },
+  peopleCount: { type: Number, required: true },
+  urgencyLevel: { type: String, required: true }
 });
 
-const Employee = mongoose.model('Employee', employeeSchema);
-const Grievance = mongoose.model('Grievance', grievanceSchema);
+const Employee = mongoose.model('Employee', EmployeeSchema, 'employee'); // Ensure 'employee' is singular
+const Employees = mongoose.model('Employees', EmployeeSchema, 'employees'); // Collection 'employees'
+const Grievance = mongoose.model('Grievance', GrievanceSchema, 'report'); // Grievance collection 'report'
 
+// Register route
 app.post('/register', async (req, res) => {
-    try {
-        const { regPassword } = req.body;
-        const hashedPassword = await bcrypt.hash(regPassword, 10);
+  const { agencyName, agencyId, pincode, email, employeeName, employeeId, position, phone, regPassword } = req.body;
 
-        const newEmployee = new Employee({
-            ...req.body,
-            regPassword: hashedPassword,
-        });
+  try {
+    const existingEmployee = await Employee.findOne({ employeeName });
+    if (existingEmployee) return res.status(400).json({ msg: 'Employee already exists' });
 
-        await newEmployee.save();
-        res.status(201).json({ msg: "Employee registered successfully!" });
-    } catch (err) {
-        res.status(500).json({ msg: "Registration failed", error: err.message });
-    }
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(regPassword, salt);
+
+    const newEmployee = new Employee({
+      agencyName,
+      agencyId,
+      pincode,
+      email,
+      employeeName,
+      employeeId,
+      position,
+      phone,
+      password: hashedPassword
+    });
+
+    const newEmployeeInEmployees = new Employees({
+      agencyName,
+      agencyId,
+      pincode,
+      email,
+      employeeName,
+      employeeId,
+      position,
+      phone,
+      password: hashedPassword
+    });
+
+    await newEmployee.save();
+    await newEmployeeInEmployees.save();
+    res.json({ msg: 'Registration successful' });
+  } catch (error) {
+    res.status(500).json({ msg: 'Registration failed', error: error.message });
+  }
 });
 
+// Login route
 app.post('/login', async (req, res) => {
-    try {
-        const { username, password } = req.body;
-        const employee = await Employee.findOne({ employeeName: username });
+  const { username, password } = req.body;
 
-        if (!employee) {
-            return res.status(400).json({ msg: "Employee not found" });
-        }
+  try {
+    const employee = await Employee.findOne({ employeeName: username });
+    if (!employee) return res.status(400).json({ msg: 'Employee does not exist' });
 
-        const isMatch = await bcrypt.compare(password, employee.regPassword);
+    const isMatch = await bcrypt.compare(password, employee.password);
+    if (!isMatch) return res.status(400).json({ msg: 'Invalid credentials' });
 
-        if (!isMatch) {
-            return res.status(400).json({ msg: "Invalid credentials" });
-        }
-
-        res.status(200).json({ msg: "Login successful" });
-    } catch (err) {
-        res.status(500).json({ msg: "Login failed", error: err.message });
-    }
+    res.json({ msg: 'Login successful' });
+  } catch (error) {
+    res.status(500).json({ msg: 'Login failed', error: error.message });
+  }
 });
 
-app.post('/grievance', async (req, res) => {
-    try {
-        const newGrievance = new Grievance(req.body);
-        await newGrievance.save();
-        res.status(201).json({ msg: "Grievance reported successfully!" });
-    } catch (err) {
-        res.status(500).json({ msg: "Grievance submission failed", error: err.message });
-    }
+// Submit grievance route
+app.post('/submit-grievance', async (req, res) => {
+  const { name, contactNumber, address, pincode, disasterType, assistanceRequired, description, peopleCount, urgencyLevel } = req.body;
+
+  try {
+    const newGrievance = new Grievance({
+      name,
+      contactNumber,
+      address,
+      pincode,
+      disasterType,
+      assistanceRequired,
+      description,
+      peopleCount,
+      urgencyLevel
+    });
+
+    await newGrievance.save();
+    res.json({ msg: 'Grievance reported successfully' });
+  } catch (error) {
+    res.status(500).json({ msg: 'Grievance submission failed', error: error.message });
+  }
 });
 
-app.listen(4000, () => {
-    console.log('Server is running on port 5001');
+// Listen on port 5000
+app.listen(5002, () => {
+  console.log('Server started on port 5002');
 });

@@ -18,6 +18,18 @@ geocoder = OpenCageGeocode(OPENCAGE_API_KEY)
 # Initialize translator
 translator = GoogleTranslator(source='auto', target='en')
 
+# News channels by city/state
+NEWS_CHANNELS = {
+    'Delhi': ['NDTV', 'Aaj Tak', 'India TV'],
+    'Mumbai': ['Times Now', 'CNN-News18', 'Star News'],
+    'Noida': ['Zee News', 'News18 India'],
+    'Kolkata': ['ABP Ananda', '24 Ghanta'],
+    'Chennai': ['Sun TV', 'Raj TV'],
+    'Hyderabad': ['TV9 Telugu', 'NTV'],
+    'Bengaluru': ['Public TV', 'TV9 Kannada'],
+    'Pune': ['Zee 24 Taas']
+}
+
 def process_query(query: str, location: str) -> Dict[str, Any]:
     """
     Process the query and location to generate search results and additional information.
@@ -34,7 +46,8 @@ def process_query(query: str, location: str) -> Dict[str, Any]:
         # Search for news articles
         search_query = f"{query} {location}"
         search_results = search(search_query, num_results=10)
-        
+
+        # Fetch news articles
         results = []
         for url in search_results:
             try:
@@ -50,8 +63,8 @@ def process_query(query: str, location: str) -> Dict[str, Any]:
         summary = summarize_text(all_text)
         key_points = extract_key_points(all_text)
 
-        # Get Instagram results
-        instagram_results = search_instagram(query, location)
+        # Get news from local channels
+        local_results = search_local_news(query, location)
 
         return {
             "query": query,
@@ -59,7 +72,7 @@ def process_query(query: str, location: str) -> Dict[str, Any]:
             "results": results,
             "summary": summary,
             "key_points": key_points,
-            "instagram_results": instagram_results
+            "local_results": local_results
         }
 
     except Exception as e:
@@ -126,7 +139,7 @@ def find_report_links(soup: BeautifulSoup, url: str) -> List[Dict[str, str]]:
     
     return report_links
 
-def summarize_text(text: str, sentences_count: int = 3) -> str:
+def summarize_text(text: str, sentences_count: int = 5) -> str:
     """
     Generate a summary of the given text.
     """
@@ -142,7 +155,7 @@ def summarize_text(text: str, sentences_count: int = 3) -> str:
     top_sentences = sorted(sentence_scores, reverse=True)[:sentences_count]
     return ' '.join(sentence for _, sentence in sorted(top_sentences, key=lambda x: sentences.index(x[1])))
 
-def extract_key_points(text: str, num_points: int = 5) -> List[str]:
+def extract_key_points(text: str, num_points: int = 7) -> List[str]:
     """
     Extract key points from the given text.
     """
@@ -161,44 +174,28 @@ def extract_key_points(text: str, num_points: int = 5) -> List[str]:
     
     return key_points[:num_points]
 
-def search_instagram(query: str, location: str, num_results: int = 5) -> List[Dict[str, Any]]:
+def search_local_news(query: str, location: str) -> List[Dict[str, Any]]:
     """
-    Search Instagram for posts related to the query and location.
+    Search for local news channels based on city/state.
     """
-    hashtag = f"{query.replace(' ', '')}in{location.replace(' ', '')}"
-    url = f"https://www.instagram.com/explore/tags/{hashtag}/"
+    city = location.split(',')[0].strip()  # Extract city from location
+    channels = NEWS_CHANNELS.get(city, [])
     
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-    }
+    local_results = []
+    for channel in channels:
+        search_query = f"{query} {channel}"
+        search_results = search(search_query, num_results=5)
+        
+        for url in search_results:
+            try:
+                article_data = fetch_article_data(url)
+                if article_data:
+                    local_results.append(article_data)
+            except Exception as e:
+                print(f"Error fetching data for {url}: {e}")
+                continue
     
-    try:
-        response = requests.get(url, headers=headers)
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        script = soup.find('script', text=re.compile('window._sharedData'))
-        
-        if script:
-            json_data = script.string.split('window._sharedData = ')[1].split(';</script>')[0]
-            data = json.loads(json_data)
-            
-            posts = data['entry_data']['TagPage'][0]['graphql']['hashtag']['edge_hashtag_to_media']['edges']
-            
-            results = []
-            for post in posts[:num_results]:
-                node = post['node']
-                results.append({
-                    'url': f"https://www.instagram.com/p/{node['shortcode']}/",
-                    'image_url': node['display_url'],
-                    'caption': node['edge_media_to_caption']['edges'][0]['node']['text'] if node['edge_media_to_caption']['edges'] else '',
-                    'likes': node['edge_liked_by']['count'],
-                    'comments': node['edge_media_to_comment']['count']
-                })
-            
-            return results
-    except Exception as e:
-        print(f"Error fetching Instagram data: {str(e)}")
-        return []
+    return local_results
 
 def process_data_json():
     """

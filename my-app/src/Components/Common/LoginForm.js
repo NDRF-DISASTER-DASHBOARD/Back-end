@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
@@ -49,7 +48,7 @@ const LoginForm = ({ isVisible, onClose }) => {
   const handleRegisterSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/register', registerData);
+      const response = await axios.post('http://localhost:5002/register', registerData);
       console.log(response.data.msg);
       setIsRegisterVisible(false);
       setPopupMessage("Registration successful! Now you can login.");
@@ -62,7 +61,7 @@ const LoginForm = ({ isVisible, onClose }) => {
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/login', { username, password });
+      const response = await axios.post('http://localhost:5002/login', { username, password });
       console.log('Login successful:', response.data);
       setPopupMessage("Login successful! Redirecting to dashboard...");
       setIsPopupVisible(true);
@@ -94,7 +93,7 @@ const LoginForm = ({ isVisible, onClose }) => {
       {isVisible && isLoginVisible && (
         <div className={`login-modal ${isVisible ? "show" : ""}`}>
           <div className="login-content">
-            <button onClick={handleClose} id="close-button"> {/* Update the close button handler */}
+            <button onClick={handleClose} id="close-button">
               X
             </button>
             <h1>Login</h1>

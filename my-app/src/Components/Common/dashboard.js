@@ -17,7 +17,11 @@ const Dashboard = () => {
     console.log('Search initiated with:', { searchQuery, location });
 
     try {
-      // Log the request data being sent to the server
+      // Reset the state before new search
+      setSearchResult('');
+      setProcessedData(null);
+      setError(null);
+
       console.log('Sending search request to backend...', {
         query: searchQuery,
         location: location,
@@ -26,17 +30,24 @@ const Dashboard = () => {
       const response = await axios.post('http://localhost:5000/search', {
         query: searchQuery,
         location: location,
+      }, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
       });
 
       console.log('Received response from /search:', response.data);
       setSearchResult(response.data.message);
 
-      // Log that the search was successful and now processing data
       console.log('Search successful. Now sending processing request...');
 
       const processResponse = await axios.post('http://localhost:5000/process', {
         query: searchQuery,
         location: location,
+      }, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
       });
 
       console.log('Received response from /process:', processResponse.data);
@@ -48,9 +59,14 @@ const Dashboard = () => {
 
       if (error.response) {
         console.error('Backend error response:', error.response.data);
+        setError(`Error: ${error.response.data.error || 'An unexpected error occurred'}`);
+      } else if (error.request) {
+        console.error('No response received:', error.request);
+        setError('No response received from the server. Please try again.');
+      } else {
+        console.error('Error setting up request:', error.message);
+        setError(`Error: ${error.message}`);
       }
-
-      setError('Failed to perform search. Please try again.');
     }
   };
 
@@ -75,10 +91,16 @@ const Dashboard = () => {
 
       if (error.response) {
         console.error('Backend error response:', error.response.data);
+        setError(`Failed to fetch results. Error: ${error.response.data.error || 'An unexpected error occurred'}`);
+      } else if (error.request) {
+        console.error('No response received:', error.request);
+        setError('No response received from the server. Please try again.');
+      } else {
+        console.error('Error setting up request:', error.message);
+        setError(`Error: ${error.message}`);
       }
 
       setProcessedData(null);
-      setError(`Failed to fetch results. Error: ${error.response?.data?.error || error.message}`);
       setRawJson('Failed to fetch results.json');
     }
   };

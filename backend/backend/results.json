@@ -1,115 +1,221 @@
 {
-  "query": "murder",
-  "location": "Kolkata, India",
+  "query": "landslide",
+  "location": "mwayanad",
   "results": [
     {
-      "title": "No Title",
-      "snippet": "",
-      "link": "https://www.hindustantimes.com/india-news/kolkata-doctor-rape-murder-case-live-updates-september-3-2024-junior-doctors-protest-lalbazar-vineet-goyal-101725323052378.html",
+      "title": "2024 Wayanad landslides - Wikipedia",
+      "snippet": "\n The 2024 Wayanad landslides were a series of landslides that occurred in Punjirimattom, Mundakkai, Chooralmala, and Vellarimala villages in Meppadi panchayat, Vythiri taluk[5] in Wayanad district, Kerala, India in the early hours of 30 July 2024. The landslides were caused by heavy rains that caused hillsides to collapse, destroying the areas below. The disaster was one of the deadliest in Kerala's history, with reports of over 336 fatalities,[6][7][8] 397 injuries,[9] and 78 people missing.[10][9] Deforestation, seismic sensitivity, poor building construction, and global warming have been identified as possible causes for the landslides and fatalities.\n Many government agencies such as the armed forces, the National Disaster Response Force (NDRF), fire and rescue services, and forest and wildlife authorities, as well as volunteers, launched a large-scale rescue mission to search for survivors.[11]\n",
+      "link": "https://en.wikipedia.org/wiki/2024_Wayanad_landslides",
       "publishedAt": "No Date",
       "source": "No Source",
       "image": "No Image",
-      "report_links": []
-    },
-    {
-      "title": "Ex Principal Of Kolkata Hospital Where Doctor Was Raped-Murdered Arrested",
-      "snippet": "Sandip Ghosh, the former principal of the Kolkata hospital where a doctor was raped and murdered last month, has been arrested by the Central Bureau of Investigation or CBI after a marathon two-week questioning session. The arrest was made in connection with the allegations of financial irregularities during his tenure, which are being investigated by the central agency alongside the rape-murder case. Three others have been arrested along with Sandip Ghosh. Sources said they are vendors Biplav Singha and Suman Hazara, who supplied medicine to the hospital and Afsar Ali, a security guard. As Principal of the RG Kar Medical College, where the woman doctor's body was discovered on the morning of August 9, the role of Sandip Ghosh has been questioned by many. Even the Supreme Court had questioned why he, the head of the institution, had not lodged a First Information Report immediately.\u00a0",
-      "link": "https://www.ndtv.com/india-news/ex-principal-of-kolkata-hospital-where-doctor-was-raped-murdered-arrested-6475279",
-      "publishedAt": "No Date",
-      "source": "NDTV.com",
-      "image": "https://c.ndtvimg.com/2024-08/dfu1hkg8_sandip-ghosh-kolkata-hospital-_625x300_24_August_24.jpg",
       "report_links": [
         {
-          "title": "US Accident News",
-          "url": "https://www.ndtv.com/india-news/4-indians-charred-in-chilling-multi-car-crash-in-us-they-were-carpooling-6486029"
-        }
-      ]
-    },
-    {
-      "title": "No Title",
-      "snippet": "",
-      "link": "https://www.hindustantimes.com/india-news/kolkata-rape-murder-case-live-updates-junior-doctors-meet-top-cop-vineet-goyal-demand-his-resignation-101725415428882.html",
-      "publishedAt": "No Date",
-      "source": "No Source",
-      "image": "No Image",
-      "report_links": []
-    },
-    {
-      "title": "Kolkata Rape and Murder Case Live Updates: Victim's parents to join doctors' protest today; SC to resume hearing tomorrow  - The Times of India",
-      "snippet": "Kolkata Doctor Rape Case Live: 'Mamata Banerjee has come up with a law. However, the central government should give its feedback on it' Mamata Banerjee has come up with a law. However, the central government should give its feedback on it. Whether they support its implementation in entire country or not. I think they won\u2019t support because they must be facing this fear that the convicts of Bilkis Bano rape case will be hanged: Samajwadi Party spokesperson Manoj Yadav Kolkata rape-murder: Lens on 2 vendors in ex-principal's graft probe: CBI",
-      "link": "https://timesofindia.indiatimes.com/city/kolkata/kolkata-doctor-rape-murder-case-live-updates-vineet-goyal-resignation-rg-kar-hospital-junior-doctors-protest-lalbazar-sanjay-roy/liveblog/113008373.cms",
-      "publishedAt": "No Date",
-      "source": "The Times of India",
-      "image": "https://static.toiimg.com/thumb/msid-113008373,width-1070,height-580,imgsize-2710875,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
-      "report_links": [
-        {
-          "title": "Trees saved from axe in 2020 shield Vadodara housing society from crippling floods",
-          "url": "https://timesofindia.indiatimes.com/city/vadodara/trees-saved-from-axe-in-2020-shield-vadodara-housing-society-from-crippling-floods/articleshow/113057129.cms"
-        }
-      ]
-    },
-    {
-      "title": "Kolkata Doctor Rape-Murder Live Updates: Health services remain crippled at hospitals in Bengal as doctors continue strike",
-      "snippet": "Kolkata Doctor Rape-Murder Live Updates: Health services remained crippled at state-run hospitals in West Bengal as junior doctors Wednesday continued to protest against the alleged rape and murder of a trainee medic at RG Kar hospital lats month, news agency PTI reported. The protesters have alleged inadequate steps by the police during its probe into the matter, before the investigation was handed over to the CBI by the Calcutta High Court. They are also demanding the Kolkata Police Commissioner Vineet Goyal to resign. A day earlier, the West Bengal Assembly unanimously passed the newly drafted anti-rape Bill, that seeks capital punishment for a rape convict if the assault results in the death of a victim or leaves her in a vegetative state, and life sentence without parole for any other offender. Chief Minister Mamata Banerjee described the proposed legislation as \u201chistoric\u201d and rejected the Opposition charge that her government had not done enough for the security of women. Reacting to the passage of the Bill, Union Minister Kiren Rijiju took to X (formerly Twitter) to assert that while strong laws are necessary, strong actions are more important. \u201cThis is an extremely serious matter. Please don\u2019t make it political issue. Very strong laws are necessary but strong actions are more important. When the letter was written, media had carried this news extensively, but West Bengal Govt failed to act!\u201d Rijiju said.",
-      "link": "https://indianexpress.com/article/cities/kolkata/kolkata-doctor-rape-murder-live-updates-tmc-bjp-bengal-assembly-9545703/",
-      "publishedAt": "2024-09-02T10:16:15+05:30",
-      "source": "The Indian Express",
-      "image": "https://images.indianexpress.com/2024/09/doctors-protest-1.jpeg",
-      "report_links": []
-    },
-    {
-      "title": "Kolkata doctor rape-murder case: Junior doctors present artificial spine to Kolkata CP Vineet Goyal - India Today",
-      "snippet": "Listen to Story A delegation of junior doctors in Kolkata on Tuesday carried a hand-made artificial spine to their meeting with the city Police Commissioner Vineet Kumar Goyal. The unsaid message, which was put across in a unique way, was asking the police to \"grow a backbone\". The symbolic act was part of the protest against the rape and murder of a trainee doctor at Kolkata's RG Kar hospital last month. The spine, crafted by the doctors themselves, was prominently displayed on the round table in the meeting room at police headquarters, positioned directly in front of Additional Commissioner of Police Murlidhar Sharma.",
-      "link": "https://www.indiatoday.in/india/story/kolkata-doctor-rape-medics-protest-bengal-murder-case-police-cp-vineet-goyal-2593075-2024-09-03",
-      "publishedAt": "2024-09-03T21:16:54+05:30",
-      "source": "India Today",
-      "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202409/kolkata-doctors-present-artificial-spine-to-police--demand-top-cops-resignation-031822314-16x9_0.jpeg?VersionId=Whnv1b8SgMsKgLzRO1So7UAdl7jeDtU.",
-      "report_links": [
-        {
-          "title": "Bengal anti-rape bill passed amid 'Mamata Banerjee vs BJP' fireworks in assembly",
-          "url": "https://www.indiatoday.in/india/story/west-bengal-anti-rape-bill-aparajita-woman-and-child-bill-introduced-mamata-banerjee-bjp-2592722-2024-09-03"
+          "title": "Landslide",
+          "url": "https://en.wikipedia.org/wiki/2024_Wayanad_landslides/wiki/Landslide"
         },
         {
-          "title": "Terrorists open fire at cops in J&K's Rajouri, search operation launched",
-          "url": "https://www.indiatoday.in/india/story/terrorists-open-fire-cops-jammu-kashmir-rajouri-search-operation-2593082-2024-09-03"
+          "title": "Flash flood",
+          "url": "https://en.wikipedia.org/wiki/2024_Wayanad_landslides/wiki/Flash_flood"
+        },
+        {
+          "title": "2024 Wayanad Landslide Report",
+          "url": "https://reliefweb.int/attachments/ea5ae42e-b52f-4ebf-b004-9d679820a1f0/LOCAL-Sitrep_Landslide%20in%20Kerala-011-2024_05-08-2024.pdf"
+        },
+        {
+          "title": "Kerala Fire and Rescue Services",
+          "url": "https://en.wikipedia.org/wiki/2024_Wayanad_landslides/wiki/Kerala_Fire_and_Rescue_Services"
+        },
+        {
+          "title": "Tamil Nadu Disaster Response Force",
+          "url": "https://en.wikipedia.org/wiki/2024_Wayanad_landslides/wiki/Tamil_Nadu_Disaster_Response_Force"
         }
       ]
     },
     {
-      "title": "Kolkata doctor rape-murder probe: Why did the CBI arrest Sandip Ghosh and 3 others in the RG Kar Hospital rape case? | Today News",
-      "snippet": "Kolkata doctor rape-murder probe: Sandip Ghosh, the former principal of RG Kar Medical College and Hospital, and three others were arrested by the Central Bureau of Investigation's (CBI) Anti-Corruption Branch on September 2. Ghosh was arrested in connection with the alleged \"financial misconduct\" at the hospital, officials said. When news of his arrest broke, junior doctors who had been protesting over the Kolkata doctor rape case began celebrating.",
-      "link": "https://www.livemint.com/news/india/kolkata-doctor-rape-murder-probe-why-cbi-arrested-sandip-ghosh-3-others-rg-kar-hospital-rape-case-financial-misconduct-11725329112454.html",
-      "publishedAt": "2024-09-03T08:18:04+05:30",
-      "source": "mint",
-      "image": "https://www.livemint.com/lm-img/img/2024/09/03/1600x900/Kolkata_doctor_rape_CBI_probe_Sandip_Ghosh_arrest_1725329628135_1725329628358.jpg",
+      "title": "\n\tWayanad landslides: How two villages vanished overnight - The Hindu\n",
+      "snippet": "To enjoy additional benefits CONNECT WITH US Updated  - August 16, 2024 01:30 pm IST",
+      "link": "https://www.thehindu.com/news/national/kerala/wayanad-landslide-how-two-villages-vanished-overnight/article68506601.ece",
+      "publishedAt": "2024-08-16T06:04:32.000Z",
+      "source": "The Hindu",
+      "image": "https://th-i.thgim.com/public/incoming/jtgue3/article68502865.ece/alternates/LANDSCAPE_1200/PTI08_01_2024_000579B.jpg",
+      "report_links": [
+        {
+          "title": "Chooralmala and Mundakkai villages in the district of Wayanad in Kerala were hit by devastating landslides",
+          "url": "https://www.thehindu.com/news/national/kerala/massive-landslides-hit-keralas-wayanad/article68462894.ece"
+        },
+        {
+          "title": "Wayanad landslide survivors recall scary experiences",
+          "url": "https://www.thehindu.com/news/national/kerala/its-a-tall-order-for-landslide-survivors/article68497442.ece"
+        },
+        {
+          "title": "the reports of post-disaster studies conducted by Kerala",
+          "url": "https://www.thehindu.com/news/national/kerala/human-interventions-excessive-rain-have-combined-effect-on-landslides-reveal-post-disaster-studies/article68513365.ece"
+        },
+        {
+          "title": "Wayanad landslides: Kerala govt announces \u20b96 lakh compensation to next of kin of victims",
+          "url": "https://www.thehindu.com/news/national/kerala/wayanad-landslides-kerala-govt-announces-6-lakh-compensation-to-next-of-kin-of-victims/article68523894.ece"
+        },
+        {
+          "title": "Indian Landslide Susceptibility Map",
+          "url": "https://hydrosense.users.earthengine.app/view/ilsm"
+        }
+      ]
+    },
+    {
+      "title": "Situation Report 5 Wayanad Landslide (Date: 26th August 2024 (Fri) Time: 14:00 PM (IST) - India | ReliefWeb",
+      "snippet": "\nIndia\n SITUATION UPDATE AND RESPONSE \u2022 A landslide happened on July 30, 2024, at 02:17 hours, near Mundakki, Chooralmala, Vellarimala Village in Meppadi Panchayat, Vythiri Taluk, Wayanad District, as a result of continuous heavy to extremely severe rains. About 700 homes and businesses have been buried under the debris.",
+      "link": "https://reliefweb.int/report/india/situation-report-5-wayanad-landslide-date-26th-august-2024-fri-time-1400-pm-ist",
+      "publishedAt": "No Date",
+      "source": "ReliefWeb",
+      "image": "https://reliefweb.int/sites/default/files/styles/large/public/previews/b5/31/b53143ae-a029-471c-a845-00923041cdf2.png",
       "report_links": []
     },
     {
-      "title": "Kolkata rape-murder: Man flashes woman during protest over trainee doctor's rape-murder at RG Kar Hospital - Kolkata News | India Today",
-      "snippet": "Listen to Story A woman was allegedly sexually harassed in Kolkata during a protest against the rape-murder of a trainee doctor. According to those present at the protest, the man allegedly flashed his private parts at a protesting woman.  The incident occurred near the Esplanade crossing, one of the busiest intersections in the city. Some of the protesters caught the man red-handed and called the police personnel posted nearby.",
-      "link": "https://www.indiatoday.in/cities/kolkata/story/kolkata-rape-murder-case-protest-woman-molested-police-probe-2591937-2024-09-01",
-      "publishedAt": "2024-09-01T23:43:46+05:30",
-      "source": "India Today",
-      "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202409/kolkata-protests-011319423-16x9_0.jpg?VersionId=umedX46BoFokRLFVV0b_zKlmGXVFFsER",
+      "title": "The rain and pain of Wayanad landslide, India  - Frati Francescani",
+      "snippet": "The Wayanad landslide of 2024, triggered by heavy monsoon rains and a midnight cloudburst on July 30th, brought unimaginable devastation to Kerala, South India. We lost over 415 lives, with more than 200 of our brothers and sisters still missing. The disaster reduced homes, resorts, schools, places of worship, and vital infrastructure to rubble, leaving survivors with nothing but the wet, torn clothes they wore as they fled for their lives. Wayanad, a district known for its hills, valleys, and tea gardens, is one of the most underdeveloped regions in Kerala. We, the friars living in the remote village of Meppadi, found ourselves deeply connected to this tragedy. Our friary, Prakruthi Mithra, which stands for living in harmony with nature, is located within the vicinity of the disaster. On that fateful night, the relentless rains turned the Chaliyar River into a violent torrent. The landslides not only caused physical destruction but also left deep psychological scars. What was once a life-giving monsoon became a terrifying force of death. As we looked around, we saw our neighbors, once eagerly awaiting the monsoon rains to bring relief from the summer heat, now facing a harsh reality. The landslides, combined with the fear of more to come, forced many into temporary camps. The pain of losing loved ones was unbearable, especially for those who couldn\u2019t even recover the bodies of their family members to perform last rites.",
+      "link": "https://ofm.org/en/the-rain-and-pain-of-wayanad-landslide-india.html",
+      "publishedAt": "No Date",
+      "source": "OFM.org",
+      "image": "https://ofm.org/uploads/Monzone_India_Copertina.jpg",
       "report_links": []
     },
     {
-      "title": "Kolkata rape-murder: Man flashes woman during protest over trainee doctor's rape-murder at RG Kar Hospital - Kolkata News | India Today",
-      "snippet": "Listen to Story A woman was allegedly sexually harassed in Kolkata during a protest against the rape-murder of a trainee doctor. According to those present at the protest, the man allegedly flashed his private parts at a protesting woman.  The incident occurred near the Esplanade crossing, one of the busiest intersections in the city. Some of the protesters caught the man red-handed and called the police personnel posted nearby.",
-      "link": "https://www.indiatoday.in/cities/kolkata/story/kolkata-rape-murder-case-protest-woman-molested-police-probe-2591937-2024-09-01",
-      "publishedAt": "2024-09-01T23:43:46+05:30",
-      "source": "India Today",
-      "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202409/kolkata-protests-011319423-16x9_0.jpg?VersionId=umedX46BoFokRLFVV0b_zKlmGXVFFsER",
+      "title": "\n\tWayanad Landslide Disaster: When Nature Rewrote the Map - Frontline\n",
+      "snippet": " Published : Aug 17, 2024 15:47 IST - 18 MINS READ  \nCOMMents  \nSHARE\n",
+      "link": "https://frontline.thehindu.com/environment/wayanad-mundakkai-chooralmala-landslides-army-bodies-kerala-climate-change-impact-gadgil-western-ghats/article68528102.ece",
+      "publishedAt": "2024-08-17T10:17:12.000Z",
+      "source": "Frontline",
+      "image": "https://fl-i.thgim.com/public/incoming/2csjv5/article68528278.ece/alternates/LANDSCAPE_1200/Wayanad%20Opening.JPG",
+      "report_links": [
+        {
+          "title": "Mounting perils: The growing threat of landslides in India",
+          "url": "https://frontline.thehindu.com/environment/climate-change-environmental-disaster-landslides-in-india-kerala-wayanad-landslide-irshalwadi-landslide/article68473788.ece"
+        },
+        {
+          "title": "Puthumala (August 8, 2019) landslide disaster",
+          "url": "https://frontline.thehindu.com/the-nation/article29277125.ece"
+        },
+        {
+          "title": "Landslides in Kerala more frequent due to climate change, deforestation",
+          "url": "https://frontline.thehindu.com/environment/pouring-hardship/article65778187.ece"
+        },
+        {
+          "title": "Wayanad landslide disaster reaffirms Kerala\u2019s vulnerability to extreme weather",
+          "url": "https://frontline.thehindu.com/news/kerala-wayanad-landslides-death-rescue-efforts-rains-floods/article68465507.ece?utm_source=relatedstories&utm_medium=article&utm_campaign=trackRelArt"
+        },
+        {
+          "title": "Before Wayanad: Karnataka\u2019s Western Ghats saw rising landslides, met sluggish action",
+          "url": "https://frontline.thehindu.com/environment/wayanad-karnatakas-western-ghats-are-no-strangers-to-landslides/article68508723.ece?utm_source=relatedstories&utm_medium=article&utm_campaign=trackRelArt"
+        }
+      ]
+    },
+    {
+      "title": "The 30 July 2024 Wayanad landslides in Kerala, India",
+      "snippet": "Eos \n\t\t\t\t\tScience News by AGU\t\t\t\t The Landslide Blog is written by Dave Petley, who is widely recognized as a world leader in the study and management of landslides. ",
+      "link": "https://eos.org/thelandslideblog/wayanad-landslides",
+      "publishedAt": "2024-08-06T06:34:32+00:00",
+      "source": "Eos",
+      "image": "https://eos.org/wp-content/uploads/2024/08/24_08-Wayanad-4.jpg",
+      "report_links": [
+        {
+          "title": "The Landslide Blog",
+          "url": "https://eos.org/landslide-blog"
+        },
+        {
+          "title": "The Landslide Blog",
+          "url": "https://eos.org/landslide-blog"
+        },
+        {
+          "title": "The Landslide Blog",
+          "url": "https://eos.org/landslide-blog"
+        },
+        {
+          "title": "The Landslide Blog",
+          "url": "https://eos.org/thelandslideblog"
+        },
+        {
+          "title": "The Landslide Blog",
+          "url": "https://eos.org/landslide-blog"
+        }
+      ]
+    },
+    {
+      "title": "403 Forbidden",
+      "snippet": "",
+      "link": "https://india.mongabay.com/2024/08/commentary-on-the-trail-of-the-wayanad-landslide/",
+      "publishedAt": "No Date",
+      "source": "No Source",
+      "image": "No Image",
+      "report_links": []
+    },
+    {
+      "title": "Wayanad landslide largest in India\u2019s history, finds study",
+      "snippet": " THIRUVANANTHAPURAM: The landslide that devastated a few villages of Wayanad a month ago is the biggest in India\u2019s recorded history, according to a study commissioned by the Kerala State Disaster Management Authority. The July 30 landslide resulted in a debris flow of nearly six million cubic metres -- capable of filling 2,400 Olympic-sized swimming pools  stretching eight kilometres downhill, the study found.  Previously, the 1998 Malpa landslide in Uttarakhand held the record for the largest debris flow in the country. The Wayanad landslide was five times larger than Malpa and 300 times the size of the 2020 Pettimudi landslide in Munnar.  The study conducted jointly by researchers from the Indian Institute of Science Education and Research-Mohali, Kerala University, and the Kerala University of Fisheries and Ocean Studies used LiDAR technology and photogrammetric methods to arrive at its conclusion. ",
+      "link": "https://www.newindianexpress.com/states/kerala/2024/Aug/31/wayanad-landslide-largest-in-indias-history-finds-study",
+      "publishedAt": "No Date",
+      "source": "The New Indian Express",
+      "image": "https://media.assettype.com/newindianexpress%2F2024-08-30%2Fcynckck8%2FWayanad%20landslide.jpg?rect=0%2C57%2C513%2C269&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+      "report_links": [
+        {
+          "title": "Kerala State Disaster Management Authority",
+          "url": "https://www.newindianexpress.com/states/kerala/2024/Aug/31/wayanad-landslide-largest-in-indias-history-finds-study/topic/kerala-state-disaster-management-authority"
+        },
+        {
+          "title": "Wayanad landslide",
+          "url": "https://www.newindianexpress.com/states/kerala/2024/Aug/31/wayanad-landslide-largest-in-indias-history-finds-study/topic/wayanad-landslide"
+        }
+      ]
+    },
+    {
+      "title": "Behind the Wayanad landslides: Extremely heavy rain, fragile ecology, a steady rise in population | India News - The Indian Express",
+      "snippet": "Extremely heavy rainfall, a fragile ecology particularly vulnerable to landslides, and steadily increasing population pressures all combined to trigger multiple landslides in Wayanad district of Kerala on Tuesday, an incident that is turning out to be one of the worst disasters in the state in recent years. Experts said it was the biggest landslide-related disaster in the state till now, at least in terms of casualties. More than 100 people are already confirmed dead in the incident that was triggered early on Tuesday morning amidst a heavy downpour. The events brought back memories of the 2018 flooding in the state, triggered by excessive rains that killed about 500 people. Wayanad district received more than 140 mm of rainfall in the 24 hours between the mornings of Monday and Tuesday, about five times more than what is expected, data from India Meteorological Department (IMD) showed. Within the Wayanad district, several areas reported more than 300 mm of rainfall during this period.",
+      "link": "https://indianexpress.com/article/india/what-caused-wayanad-landslides-rain-ecology-population-9485781/",
+      "publishedAt": "2024-07-31T07:46:55+05:30",
+      "source": "The Indian Express",
+      "image": "https://images.indianexpress.com/2024/07/PTI07_30_2024_000579B.jpg",
+      "report_links": [
+        {
+          "title": "multiple landslides in Wayanad district",
+          "url": "https://indianexpress.com/article/india/wayanad-122-counting-landslides-sweep-several-villages-in-kerala-district-toll-may-rise-9485636/"
+        },
+        {
+          "title": "2018 flooding in the state",
+          "url": "https://indianexpress.com/article/india/wayanad-landslides-history-in-india-9484471/"
+        },
+        {
+          "title": "trigger landslides in Kerala almost every year",
+          "url": "https://indianexpress.com/article/india/2-panels-put-site-in-eco-sensitive-zone-10-yrs-ago-no-notification-9485635/"
+        },
+        {
+          "title": "Wayanad landslides: 2 panels put site in eco-sensitive zone 10 yrs ago, no notification",
+          "url": "https://indianexpress.com/article/india/2-panels-put-site-in-eco-sensitive-zone-10-yrs-ago-no-notification-9485635/"
+        },
+        {
+          "title": "Centre extends ceasefire with Naga insurgent group for a year",
+          "url": "https://indianexpress.com/shorts/india/centre-extends-ceasefire-with-naga-insurgent-group-for-a-year-9552836/?ref=article"
+        }
+      ]
+    },
+    {
+      "title": "Situation Report 2: Wayanad Landslide (30th July 2024) - India | ReliefWeb",
+      "snippet": "\nIndia\n Date: 30th July 2024 (Tue)Time: 05:30 PM (IST) SITUATION UPDATE AND RESPONSE",
+      "link": "https://reliefweb.int/report/india/situation-report-2-wayanad-landslide-30th-july-2024",
+      "publishedAt": "No Date",
+      "source": "ReliefWeb",
+      "image": "https://reliefweb.int/sites/default/files/styles/large/public/previews/cf/47/cf472978-1185-45e9-86c3-c74173b85abb.png",
       "report_links": []
     }
   ],
-  "summary": "No Title  Ex Principal Of Kolkata Hospital Where Doctor Was Raped-Murdered Arrested Sandip Ghosh, the former principal of the Kolkata hospital where a doctor was raped and murdered last month, has been arrested by the Central Bureau of Investigation or CBI after a marathon two-week questioning session. I think they won\u2019t support because they must be facing this fear that the convicts of Bilkis Bano rape case will be hanged: Samajwadi Party spokesperson Manoj Yadav Kolkata rape-murder: Lens on 2 vendors in ex-principal's graft probe: CBI Kolkata Doctor Rape-Murder Live Updates: Health services remain crippled at hospitals in Bengal as doctors continue strike Kolkata Doctor Rape-Murder Live Updates: Health services remained crippled at state-run hospitals in West Bengal as junior doctors Wednesday continued to protest against the alleged rape and murder of a trainee medic at RG Kar hospital lats month, news agency PTI reported. Kolkata rape-murder: Man flashes woman during protest over trainee doctor's rape-murder at RG Kar Hospital - Kolkata News | India Today Listen to Story A woman was allegedly sexually harassed in Kolkata during a protest against the rape-murder of a trainee doctor.",
+  "summary": "2024 Wayanad landslides - Wikipedia \n The 2024 Wayanad landslides were a series of landslides that occurred in Punjirimattom, Mundakkai, Chooralmala, and Vellarimala villages in Meppadi panchayat, Vythiri taluk[5] in Wayanad district, Kerala, India in the early hours of 30 July 2024.  Many government agencies such as the armed forces, the National Disaster Response Force (NDRF), fire and rescue services, and forest and wildlife authorities, as well as volunteers, launched a large-scale rescue mission to search for survivors.[11]\n \n\tWayanad landslides: How two villages vanished overnight - The Hindu\n To enjoy additional benefits CONNECT WITH US Updated  - August 16, 2024 01:30 pm IST Situation Report 5 Wayanad Landslide (Date: 26th August 2024 (Fri) Time: 14:00 PM (IST) - India | ReliefWeb \nIndia\n SITUATION UPDATE AND RESPONSE \u2022 A landslide happened on July 30, 2024, at 02:17 hours, near Mundakki, Chooralmala, Vellarimala Village in Meppadi Panchayat, Vythiri Taluk, Wayanad District, as a result of continuous heavy to extremely severe rains. \n\tWayanad Landslide Disaster: When Nature Rewrote the Map - Frontline\n  Published : Aug 17, 2024 15:47 IST - 18 MINS READ  \nCOMMents  \nSHARE\n The 30 July 2024 Wayanad landslides in Kerala, India Eos \n\t\t\t\t\tScience News by AGU\t\t\t\t The Landslide Blog is written by Dave Petley, who is widely recognized as a world leader in the study and management of landslides.  403 Forbidden  Wayanad landslide largest in India\u2019s history, finds study  THIRUVANANTHAPURAM: The landslide that devastated a few villages of Wayanad a month ago is the biggest in India\u2019s recorded history, according to a study commissioned by the Kerala State Disaster Management Authority.  Behind the Wayanad landslides: Extremely heavy rain, fragile ecology, a steady rise in population | India News - The Indian Express Extremely heavy rainfall, a fragile ecology particularly vulnerable to landslides, and steadily increasing population pressures all combined to trigger multiple landslides in Wayanad district of Kerala on Tuesday, an incident that is turning out to be one of the worst disasters in the state in recent years.",
   "key_points": [
-    "No Title  Ex Principal Of Kolkata Hospital Where Doctor Was Raped-Murdered Arrested Sandip Ghosh, the former principal of the Kolkata hospital where a doctor was raped and murdered last month, has been arrested by the Central Bureau of Investigation or CBI after a marathon two-week questioning session.",
-    "No Title  Ex Principal Of Kolkata Hospital Where Doctor Was Raped-Murdered Arrested Sandip Ghosh, the former principal of the Kolkata hospital where a doctor was raped and murdered last month, has been arrested by the Central Bureau of Investigation or CBI after a marathon two-week questioning session.",
-    "No Title  Ex Principal Of Kolkata Hospital Where Doctor Was Raped-Murdered Arrested Sandip Ghosh, the former principal of the Kolkata hospital where a doctor was raped and murdered last month, has been arrested by the Central Bureau of Investigation or CBI after a marathon two-week questioning session.",
-    "No Title  Ex Principal Of Kolkata Hospital Where Doctor Was Raped-Murdered Arrested Sandip Ghosh, the former principal of the Kolkata hospital where a doctor was raped and murdered last month, has been arrested by the Central Bureau of Investigation or CBI after a marathon two-week questioning session.",
-    "No Title  Ex Principal Of Kolkata Hospital Where Doctor Was Raped-Murdered Arrested Sandip Ghosh, the former principal of the Kolkata hospital where a doctor was raped and murdered last month, has been arrested by the Central Bureau of Investigation or CBI after a marathon two-week questioning session."
+    "2024 Wayanad landslides - Wikipedia \n The 2024 Wayanad landslides were a series of landslides that occurred in Punjirimattom, Mundakkai, Chooralmala, and Vellarimala villages in Meppadi panchayat, Vythiri taluk[5] in Wayanad district, Kerala, India in the early hours of 30 July 2024.",
+    "2024 Wayanad landslides - Wikipedia \n The 2024 Wayanad landslides were a series of landslides that occurred in Punjirimattom, Mundakkai, Chooralmala, and Vellarimala villages in Meppadi panchayat, Vythiri taluk[5] in Wayanad district, Kerala, India in the early hours of 30 July 2024.",
+    "2024 Wayanad landslides - Wikipedia \n The 2024 Wayanad landslides were a series of landslides that occurred in Punjirimattom, Mundakkai, Chooralmala, and Vellarimala villages in Meppadi panchayat, Vythiri taluk[5] in Wayanad district, Kerala, India in the early hours of 30 July 2024.",
+    "2024 Wayanad landslides - Wikipedia \n The 2024 Wayanad landslides were a series of landslides that occurred in Punjirimattom, Mundakkai, Chooralmala, and Vellarimala villages in Meppadi panchayat, Vythiri taluk[5] in Wayanad district, Kerala, India in the early hours of 30 July 2024.",
+    "2024 Wayanad landslides - Wikipedia \n The 2024 Wayanad landslides were a series of landslides that occurred in Punjirimattom, Mundakkai, Chooralmala, and Vellarimala villages in Meppadi panchayat, Vythiri taluk[5] in Wayanad district, Kerala, India in the early hours of 30 July 2024.",
+    "2024 Wayanad landslides - Wikipedia \n The 2024 Wayanad landslides were a series of landslides that occurred in Punjirimattom, Mundakkai, Chooralmala, and Vellarimala villages in Meppadi panchayat, Vythiri taluk[5] in Wayanad district, Kerala, India in the early hours of 30 July 2024.",
+    "2024 Wayanad landslides - Wikipedia \n The 2024 Wayanad landslides were a series of landslides that occurred in Punjirimattom, Mundakkai, Chooralmala, and Vellarimala villages in Meppadi panchayat, Vythiri taluk[5] in Wayanad district, Kerala, India in the early hours of 30 July 2024."
   ],
-  "instagram_results": null
+  "local_results": []
 }
